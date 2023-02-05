@@ -37,7 +37,7 @@ async def start(client,message):
 	    text = f"𝐔𝐬𝐞𝐫 𝐈𝐃 : ```{message.from_user.id}```\n𝐏𝐥𝐚𝐧 : {user}\n𝐃𝐚𝐢𝐥𝐲 𝐔𝐩𝐥𝐨𝐚𝐝 𝐋𝐢𝐦𝐢𝐭 : {humanbytes(limit)}\n𝐓𝐨𝐝𝐚𝐲 𝐔𝐬𝐞𝐝 : {humanbytes(used)}\n𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠 : {humanbytes(remain)}"
 	else:
 	    normal_date = datetime.fromtimestamp(ends).strftime('%Y-%m-%d')
-	    text = f"𝐔𝐬𝐞𝐫 𝐈𝐃 : ```{message.from_user.id}```\n𝐏𝐥𝐚𝐧 : {user}\n𝐃𝐚𝐢𝐥𝐲 𝐔𝐩𝐥𝐨𝐚𝐝 𝐋𝐢𝐦𝐢𝐭 : {humanbytes(limit)}\n𝐓𝐨𝐝𝐚𝐲 𝐔𝐬𝐞𝐝 : {humanbytes(used)}\n𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠 : {humanbytes(remain)}\n\n```Your Plan Ends On :- {normal_date}"
+	    text = f"𝐔𝐬𝐞𝐫 𝐈𝐃 : ```{message.from_user.id}```\n𝐏𝐥𝐚𝐧 : {user}\n𝐃𝐚𝐢𝐥𝐲 𝐔𝐩𝐥𝐨𝐚𝐝 𝐋𝐢𝐦𝐢𝐭 : {humanbytes(limit)}\n𝐓𝐨𝐝𝐚𝐲 𝐔𝐬𝐞𝐝 : {humanbytes(used)}\n𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠 : {humanbytes(remain)}\n\n```𝐘𝐨𝐮𝐫 𝐏𝐥𝐚𝐧 𝐄𝐧𝐝𝐬 𝐎𝐧 : {normal_date}"
 	    
 	if user == "Free":
 	    await message.reply(text,quote = True,reply_markup = InlineKeyboardMarkup([[       			InlineKeyboardButton("Upgrade 💰💳",callback_data = "upgrade"), InlineKeyboardButton("Cancel ✖️ ",callback_data = "cancel") ]]))
