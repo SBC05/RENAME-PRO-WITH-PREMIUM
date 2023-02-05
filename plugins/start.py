@@ -55,9 +55,14 @@ async def start(client,message):
 	        try:
 	            await client.send_message(id,"Your Frind Alredy Using Our Bot")
 	            await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	Hello 👋 {wish} {message.from_user.first_name }
+	☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.
+
+☞ Send Me Any Telegram File/Video! 
+☞ Send A Photo To Save As Permanent Thumbnail!
+☞ Select Your Desired/Required Option! 
+☞ Then Wait Till The Process Get Completed!
+☞ Maintained By : @ChVivekTomar
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("Support 🤩", url="https://t.me/TechFunAdda") ], 
