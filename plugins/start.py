@@ -37,13 +37,18 @@ async def start(client,message):
 	    id = message.text.split(' ')[1]
 	except:
 	    await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	Hello 👋 {wish} {message.from_user.first_name }
+	☞ I'm A Telegram File & Video Rename Bot With Permanent Thumbnail Support.
+
+☞ Send Me Any Telegram File/Video! 
+☞ Send A Photo To Save As Permanent Thumbnail!
+☞ Select Your Desired/Required Option! 
+☞ Then Wait Till The Process Get Completed!
+☞ Maintained By : @ChVivekTomar
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("Support 🤩", url="https://t.me/TechFunAdda") ], 
+	[InlineKeyboardButton("Subscribe 🤭", url="https://t.me/TechFunAdda") ]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -55,8 +60,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("Support 🤩", url="https://t.me/TechFunAdda") ], 
+	[InlineKeyboardButton("Subscribe 🤭", url="https://t.me/TechFunAdda") ]  ]))
 	        except:
 	             return
 	    else:
@@ -71,8 +76,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("Support 🤩", url="https://t.me/TechFunAdda") ], 
+	[InlineKeyboardButton("Subscribe 🤭", url="https://t.me/TechFunAdda") ]  ]))
 	         
 
 
@@ -88,7 +93,7 @@ async def send_doc(client,message):
        		await message.reply_text("**__You are not subscribed my channel__** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("Support 🤩" ,url=f"https://t.me/{update_channel}") ]   ]))
        		return
        try:
            bot_data = find_one(int(botid))
